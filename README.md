@@ -4,20 +4,22 @@ A lightweight, dependency-free animated sun/moon theme toggle built with **HTML 
 
 ## Demo
 
-Open [`demo/index.html`](./demo/index.html) locally, or publish the `demo` folder with GitHub Pages.
+[Live Demo](https://mohssine45.github.io/soluna-theme-toggle/)
+
+You can also open `demo/index.html` locally.
 
 ## Features
 
-- Pure HTML + CSS
-- No JavaScript
-- No dependencies
-- Lightweight and easy to customize
-- Smooth sun/moon transition
-- Animated dot transition
-- Keyboard focus support
-- `prefers-reduced-motion` support
-- Customizable accent color
-- Framework-agnostic
+* Pure HTML + CSS
+* No JavaScript
+* No dependencies
+* Lightweight and easy to customize
+* Smooth sun/moon transition
+* Animated dot transition
+* Keyboard focus support
+* `prefers-reduced-motion` support
+* Customizable accent color
+* Framework-agnostic
 
 ## Quick Start
 
@@ -61,11 +63,11 @@ soluna-theme-toggle/template.html
 
 Soluna Theme Toggle is intentionally presentation-only. It does not assume whether your application uses:
 
-- `class="dark"`
-- `data-theme="dark"`
-- React state
-- Vue state
-- another theme system
+* `class="dark"`
+* `data-theme="dark"`
+* React state
+* Vue state
+* another theme system
 
 This keeps the component reusable across different projects.
 
