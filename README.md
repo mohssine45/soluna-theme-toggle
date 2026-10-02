@@ -1,4 +1,4 @@
-# Orbit Theme Toggle
+# Soluna Theme Toggle
 
 A lightweight, dependency-free animated sun/moon theme toggle built with **HTML + CSS only**.
 
@@ -13,7 +13,7 @@ Open [`demo/index.html`](./demo/index.html) locally, or publish the `demo` folde
 - No dependencies
 - Lightweight and easy to customize
 - Smooth sun/moon transition
-- Orbiting dots animation
+- Animated dot transition
 - Keyboard focus support
 - `prefers-reduced-motion` support
 - Customizable accent color
@@ -21,7 +21,7 @@ Open [`demo/index.html`](./demo/index.html) locally, or publish the `demo` folde
 
 ## Quick Start
 
-Copy the HTML from [`src/orbit-theme-toggle.html`](./src/orbit-theme-toggle.html) and the CSS from [`src/orbit-theme-toggle.css`](./src/orbit-theme-toggle.css) into your project.
+Copy the HTML from [`src/soluna-theme-toggle.html`](./src/soluna-theme-toggle.html) and the CSS from [`src/soluna-theme-toggle.css`](./src/soluna-theme-toggle.css) into your project.
 
 The toggle intentionally does **not** control your application's theme. It only provides the UI state. Your application can listen to the checkbox state and apply its own dark-mode logic.
 
@@ -42,24 +42,24 @@ You can also change the size by adjusting `.ts-toggle`.
 The package exposes the stylesheet and HTML template:
 
 ```bash
-npm install orbit-theme-toggle
+npm install soluna-theme-toggle
 ```
 
 Import the stylesheet:
 
 ```js
-import "orbit-theme-toggle/style.css";
+import "soluna-theme-toggle/style.css";
 ```
 
 The HTML template is available at:
 
 ```text
-orbit-theme-toggle/template.html
+soluna-theme-toggle/template.html
 ```
 
 ## Important: Theme Logic
 
-Orbit Theme Toggle is intentionally presentation-only. It does not assume whether your application uses:
+Soluna Theme Toggle is intentionally presentation-only. It does not assume whether your application uses:
 
 - `class="dark"`
 - `data-theme="dark"`

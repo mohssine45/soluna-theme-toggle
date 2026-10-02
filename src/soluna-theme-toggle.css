@@ -1,0 +1,177 @@
+/* Soluna Theme Toggle */
+
+.ts-toggle-wrapper {
+  --ts-color: #ffc700;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2em;
+  height: 2em;
+}
+
+/* Hidden Input */
+.ts-switch {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Toggle */
+.ts-toggle {
+  width: 3.5em;
+  height: 3.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.ts-toggle svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Base Circle */
+.ts-base-circle {
+  fill: none;
+  stroke: var(--ts-color);
+  stroke-width: 1px;
+}
+
+/* Sun / Moon */
+.ts-sun-path,
+.ts-moon-path {
+  fill: none;
+  stroke: var(--ts-color);
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-dasharray: 62;
+
+  transition:
+    stroke-dashoffset 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ts-visible {
+  stroke-dashoffset: 0;
+}
+
+.ts-hidden {
+  stroke-dashoffset: 62;
+}
+
+/* Sun Dots */
+.ts-sun-dots .ts-dot-group {
+  transform-origin: 12px 12px;
+
+  transition:
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ts-sun-dots circle {
+  fill: var(--ts-color);
+
+  transform-origin: 12px 12px;
+  transform: translateY(-13px);
+
+  opacity: 0.85;
+
+  transition:
+    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.2s ease;
+}
+
+/* Initial Dot Positions */
+.ts-sun-dots .ts-dot-group:nth-child(1) {
+  transform: rotate(-51.4deg);
+}
+
+.ts-sun-dots .ts-dot-group:nth-child(2) {
+  transform: rotate(0deg);
+}
+
+.ts-sun-dots .ts-dot-group:nth-child(3) {
+  transform: rotate(51.4deg);
+}
+
+.ts-sun-dots .ts-dot-group:nth-child(4) {
+  transform: rotate(102.8deg);
+}
+
+.ts-sun-dots .ts-dot-group:nth-child(5) {
+  transform: rotate(154.2deg);
+}
+
+.ts-sun-dots .ts-dot-group:nth-child(6) {
+  transform: rotate(205.6deg);
+}
+
+.ts-sun-dots .ts-dot-group:nth-child(7) {
+  transform: rotate(257deg);
+}
+
+/* Active State */
+.ts-switch:checked + .ts-toggle .ts-sun-path {
+  stroke-dashoffset: 62;
+}
+
+.ts-switch:checked + .ts-toggle .ts-moon-path {
+  stroke-dashoffset: 0;
+}
+
+/* Dot Rotation */
+.ts-switch:checked + .ts-toggle .ts-sun-dots .ts-dot-group:nth-child(1) {
+  transform: rotate(-231.4deg);
+}
+
+.ts-switch:checked + .ts-toggle .ts-sun-dots .ts-dot-group:nth-child(2) {
+  transform: rotate(-180deg);
+}
+
+.ts-switch:checked + .ts-toggle .ts-sun-dots .ts-dot-group:nth-child(3) {
+  transform: rotate(-128.6deg);
+}
+
+.ts-switch:checked + .ts-toggle .ts-sun-dots .ts-dot-group:nth-child(4) {
+  transform: rotate(-77.2deg);
+}
+
+.ts-switch:checked + .ts-toggle .ts-sun-dots .ts-dot-group:nth-child(5) {
+  transform: rotate(-25.8deg);
+}
+
+.ts-switch:checked + .ts-toggle .ts-sun-dots .ts-dot-group:nth-child(6) {
+  transform: rotate(25.6deg);
+}
+
+.ts-switch:checked + .ts-toggle .ts-sun-dots .ts-dot-group:nth-child(7) {
+  transform: rotate(77deg);
+}
+
+/* Collapse Dots */
+.ts-switch:checked + .ts-toggle .ts-sun-dots circle {
+  opacity: 0;
+  transform: translateY(0) scale(0);
+}
+
+/* Accessibility */
+.ts-switch:focus-visible + .ts-toggle {
+  outline: 2px solid var(--ts-color);
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .ts-sun-path,
+  .ts-moon-path,
+  .ts-sun-dots .ts-dot-group,
+  .ts-sun-dots circle {
+    transition: none;
+  }
+}

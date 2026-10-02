@@ -1,5 +1,5 @@
 {
-  "name": "orbit-theme-toggle",
+  "name": "soluna-theme-toggle",
   "version": "1.0.0",
   "description": "A lightweight CSS-only animated sun and moon theme toggle.",
   "license": "MIT",
@@ -11,9 +11,9 @@
     "LICENSE"
   ],
   "exports": {
-    "./style.css": "./src/orbit-theme-toggle.css",
-    "./template.html": "./src/orbit-theme-toggle.html",
-    ".": "./src/orbit-theme-toggle.css"
+    "./style.css": "./src/soluna-theme-toggle.css",
+    "./template.html": "./src/soluna-theme-toggle.html",
+    ".": "./src/soluna-theme-toggle.css"
   },
   "keywords": [
     "theme-toggle",
@@ -27,10 +27,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/orbit-theme-toggle.git"
+    "url": "https://github.com/YOUR_USERNAME/soluna-theme-toggle.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/orbit-theme-toggle/issues"
+    "url": "https://github.com/YOUR_USERNAME/soluna-theme-toggle/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/orbit-theme-toggle#readme"
+  "homepage": "https://github.com/YOUR_USERNAME/soluna-theme-toggle#readme"
 }
