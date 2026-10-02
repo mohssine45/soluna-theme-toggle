@@ -1,0 +1,36 @@
+{
+  "name": "orbit-theme-toggle",
+  "version": "1.0.0",
+  "description": "A lightweight CSS-only animated sun and moon theme toggle.",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "src",
+    "demo",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./style.css": "./src/orbit-theme-toggle.css",
+    "./template.html": "./src/orbit-theme-toggle.html",
+    ".": "./src/orbit-theme-toggle.css"
+  },
+  "keywords": [
+    "theme-toggle",
+    "dark-mode",
+    "light-mode",
+    "toggle",
+    "css",
+    "ui",
+    "animation",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/orbit-theme-toggle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/orbit-theme-toggle/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/orbit-theme-toggle#readme"
+}

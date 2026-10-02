@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit Theme Toggle — Demo</title>
+  <link rel="stylesheet" href="../src/orbit-theme-toggle.css">
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #111; font-family: system-ui, sans-serif; }
+    .demo { display: grid; gap: 24px; justify-items: center; color: #fff; }
+    .demo p { margin: 0; opacity: .7; font-size: 14px; }
+    .demo code { font-size: 12px; opacity: .6; }
+  </style>
+</head>
+<body>
+  <main class="demo">
+    <p>Click the toggle</p>
+<div class="ts-toggle-wrapper">
+  <input
+    type="checkbox"
+    id="ts-switch"
+    class="ts-switch"
+    aria-label="Toggle Theme"
+  />
+
+  <label for="ts-switch" class="ts-toggle" aria-label="Toggle Theme">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <g class="ts-sun-dots">
+        <g class="ts-dot-group"><circle cx="12" cy="12" r="0.9" /></g>
+        <g class="ts-dot-group"><circle cx="12" cy="12" r="0.9" /></g>
+        <g class="ts-dot-group"><circle cx="12" cy="12" r="0.9" /></g>
+        <g class="ts-dot-group"><circle cx="12" cy="12" r="0.9" /></g>
+        <g class="ts-dot-group"><circle cx="12" cy="12" r="0.9" /></g>
+        <g class="ts-dot-group"><circle cx="12" cy="12" r="0.9" /></g>
+        <g class="ts-dot-group"><circle cx="12" cy="12" r="0.9" /></g>
+      </g>
+
+      <path
+        class="ts-base-circle"
+        d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10"
+      />
+
+      <path class="ts-sun-path" d="M12,2 A10,10 0 0,1 22,12" />
+      <path class="ts-moon-path" d="M12,2c-2.8,2.8-2.8,7.2,0,10s7.2,2.8,10,0" />
+    </svg>
+  </label>
+</div>
+
+    <code>CSS-only · no dependencies</code>
+  </main>
+</body>
+</html>
