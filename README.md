@@ -81,4 +81,4 @@ Uses standard HTML, SVG, CSS transitions, CSS custom properties, and `prefers-re
 
 ## License
 
-MIT © Mz Design
+MIT © MeowDev
